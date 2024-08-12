@@ -10,7 +10,7 @@ export const RUNTIME_CONFIG_DOM = "danger-runtime-config";
 
 export const STABILITY_BASE_URL = "https://api.stability.ai";
 
-export const DEFAULT_API_HOST = "https://api.nextchat.dev";
+export const DEFAULT_API_HOST = "https://api.bianxie.ai";
 export const OPENAI_BASE_URL = "https://api.bianxie.ai";
 export const ANTHROPIC_BASE_URL = "https://api.anthropic.com";
 
@@ -46,7 +46,7 @@ export enum Path {
 export enum ApiPath {
   Cors = "",
   Azure = "/api/azure",
-  OpenAI = "/api/openai",
+  OpenAI = "https://api.bianxie.ai",
   Anthropic = "/api/anthropic",
   Google = "/api/google",
   Baidu = "/api/baidu",
@@ -239,38 +239,38 @@ export const GEMINI_SUMMARIZE_MODEL = "gemini-pro";
 export const KnowledgeCutOffDate: Record<string, string> = {
   default: "2021-09",
   "gpt-4-turbo": "2023-12",
-  "gpt-4-turbo-2024-04-09": "2023-12",
-  "gpt-4-turbo-preview": "2023-12",
+  // "gpt-4-turbo-2024-04-09": "2023-12",
+  // "gpt-4-turbo-preview": "2023-12",
   "gpt-4o": "2023-10",
-  "gpt-4o-2024-05-13": "2023-10",
-  "gpt-4o-2024-08-06": "2023-10",
+  // "gpt-4o-2024-05-13": "2023-10",
+  // "gpt-4o-2024-08-06": "2023-10",
   "gpt-4o-mini": "2023-10",
-  "gpt-4o-mini-2024-07-18": "2023-10",
-  "gpt-4-vision-preview": "2023-04",
+  // "gpt-4o-mini-2024-07-18": "2023-10",
+  // "gpt-4-vision-preview": "2023-04",
   // After improvements,
   // it's now easier to add "KnowledgeCutOffDate" instead of stupid hardcoding it, as was done previously.
   "gemini-pro": "2023-12",
-  "gemini-pro-vision": "2023-12",
+  // "gemini-pro-vision": "2023-12",
 };
 
 const openaiModels = [
   "gpt-3.5-turbo",
-  "gpt-3.5-turbo-1106",
-  "gpt-3.5-turbo-0125",
+  // "gpt-3.5-turbo-1106",
+  // "gpt-3.5-turbo-0125",
   "gpt-4",
-  "gpt-4-0613",
-  "gpt-4-32k",
-  "gpt-4-32k-0613",
+  // "gpt-4-0613",
+  // "gpt-4-32k",
+  // "gpt-4-32k-0613",
   "gpt-4-turbo",
-  "gpt-4-turbo-preview",
+  // "gpt-4-turbo-preview",
   "gpt-4o",
-  "gpt-4o-2024-05-13",
-  "gpt-4o-2024-08-06",
+  // "gpt-4o-2024-05-13",
+  // "gpt-4o-2024-08-06",
   "gpt-4o-mini",
-  "gpt-4o-mini-2024-07-18",
-  "gpt-4-vision-preview",
-  "gpt-4-turbo-2024-04-09",
-  "gpt-4-1106-preview",
+  // "gpt-4o-mini-2024-07-18",
+  // "gpt-4-vision-preview",
+  // "gpt-4-turbo-2024-04-09",
+  // "gpt-4-1106-preview",
   "dall-e-3",
 ];
 
