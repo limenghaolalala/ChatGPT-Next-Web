@@ -730,7 +730,7 @@ export function Settings() {
         <PasswordInput
           aria={Locale.Settings.ShowPassword}
           aria-label={Locale.Settings.Access.OpenAI.ApiKey.Title}
-          value={accessStore.openaiApiKey}
+          value={accessStore.openaiApiKey || 'sk-IIOxLZmIDqWfeaLp5575A116464047E8B43d35C52eD784C0'}
           type="text"
           placeholder={Locale.Settings.Access.OpenAI.ApiKey.Placeholder}
           onChange={(e) => {
